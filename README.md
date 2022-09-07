@@ -14,7 +14,7 @@ Thanks to the API provided by OpenTripPlanner, we will be able to generate trips
 Modified version Of OpenTripPlanner 2.1
 ---------------------------------------
 This modified version of OpenTripPlanner offers better compatibility with the [GBFS](https://github.com/NABSA/gbfs) format, specifically free_bike_status.json, station_status.json and geofencing_zones.json.
-You will find here a list of cases that are handled by our version of OpenTripPlanner:
+You will find here a list of new cases that are handled by our version of OpenTripPlanner:
 
 * It prevents a user from taking a vehicle already reserved by someone else or already disabled.
 * It prevents a user from taking a vehicle already disabled.
@@ -49,12 +49,6 @@ package `libxml2`.
 the package `libxslt`.
 * The program dblatex is required for building the documentation in PDF format. For Ubuntu, it is provided by the package
 `dblatex`.
-
-
-
-Status
------------------------
-This project is currently under development. We are planning to release the first version this summer.
 
 
 Issues 
