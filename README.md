@@ -1,4 +1,4 @@
-# ConnectOTP
+# MobilityDB-OpenTripPlanner
 
 **Author: Maazouz Mehdi** <br>
 **Email: maazouz.mehdi95@gmail.com** <br>
