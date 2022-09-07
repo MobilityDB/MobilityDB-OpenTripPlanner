@@ -13,7 +13,7 @@ Thanks to the API provided by OpenTripPlanner, we will be able to generate trips
 
 Modified version Of OpenTripPlanner 2.1
 ---------------------------------------
-This modified version of OpenTripPlanner offers better compatibility with the ([GBFS] (https://github.com/NABSA/gbfs)) format, specifically free_bike_status.json, station_status.json and geofencing_zones.json.
+This modified version of OpenTripPlanner offers better compatibility with the [GBFS](https://github.com/NABSA/gbfs) format, specifically free_bike_status.json, station_status.json and geofencing_zones.json.
 You will find here a list of cases that are handled by our version of OpenTripPlanner:
 
 * It prevents a user from taking a vehicle already reserved by someone else or already disabled.
