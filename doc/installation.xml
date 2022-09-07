@@ -16,7 +16,7 @@ $ git clone https://github.com/MobilityDB/MobilityDB-OpenTripPlanner
                 <itemizedlist>
                       <listitem><para>make_doc.sh to generate the worksop's documentation.</para></listitem>
                       <listitem><para>workshop/ contains pregenerated versions of workshop's documentation.</para></listitem>
-                     <listitem><para>doc/ contains the necesseray files to generate this workshop.</para></listitem>
+                     <listitem><para>doc/ contains the necessary files to generate this workshop.</para></listitem>
                     <listitem><para>src/ contains the sql and python files that will allow the generation of MobilityTrips.</para></listitem>
 			              <listitem><para>otpData/ contains the files necessary for the WEB OTP server to function properly. These files are :  
 			                    <itemizedlist>
@@ -54,7 +54,8 @@ $ psql -h localhost -p 5432 -U dbowner -d brusselsOTP  -c 'CREATE EXTENSION Mobi
 $ psql -h localhost -p 5432 -U dbowner -d brusselsOTP  -c 'CREATE EXTENSION MobilityDB CASCADE'
       </programlisting>
       
-      <para>This last command will allow us to create a topology for the city of Brussels by creating two tables, namely <varname>ways</varname> as well as <varname>ways_vertices_pgr</varname></para>
+      <para>This last command will allow us to create a topology for the city of Brussels by creating two tables, namely <varname>ways</varname> as well as <varname>ways_vertices_pgr</varname>.
+      Don't forget to unzip brussels.zip to get brussels.osm</para>
      <programlisting xml:space="preserve">
 $ osm2pgrouting -W 'password' -h localhost -p 5432 -U dbowner -f brussels.osm -d brusselsOTP
 -- replace password by your dbowner's password
@@ -86,14 +87,14 @@ $ osm2pgrouting -W 'password' -h localhost -p 5432 -U dbowner -f brussels.osm -d
                       
         <programlisting xml:space="preserve">
 -- at the root of the project:
-$ java -Xmx4G -jar otp-2.0.0-shaded.jar   --build --save ./otpData/
+$ java -Xmx4G -jar otp-2.1.0-SNAPSHOT-shaded.jar   --build --save ./otpData/
         </programlisting>
         
         <para>The parameter <varname>-Xmx4G</varname> means that you reserve 4GB of memory in order to build the graph containing our OSM and GTFS data from Stib and Tec. If you decide to use only OSM and Stib data, the parameter <varname>-Xmx2G</varname> would be sufficient. The parameter<varname>--build</varname> means the graph is build and <varname>--save</varname> means we store the graph onto disk.
                         To start the server</para>
         <programlisting xml:space="preserve">
 -- at the root of the project:
-$ java -jar otp-2.0.0-shaded.jar   --load --serve ./otpData/
+$ java -jar otp-2.1.0-SNAPSHOT-shaded.jar   --load --serve ./otpData/
         </programlisting>
 
       <para><varname>--load</varname>  means we load the graph just built before and <varname>--serve</varname> simply means we run  an OTP API server</para>
