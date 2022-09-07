@@ -11,6 +11,18 @@ OpenTripPlanner (OTP) is an open source multi-modal trip planner, focusing on tr
 
 Thanks to the API provided by OpenTripPlanner, we will be able to generate trips according to some desired parameters (time and date we want to leave, desired modes of transport, ...). MobilityDB will allow us to generate moving points to simulate the movement of people.
 
+Modified version Of OpenTripPlanner 2.1
+---------------------------------------
+This modified version of OpenTripPlanner offers better compatibility with the ([GBFS] (https://github.com/NABSA/gbfs)) format, specifically free_bike_status.json, station_status.json and geofencing_zones.json.
+You will find here a list of cases that are handled by our version of OpenTripPlanner:
+
+* It prevents a user from taking a vehicle already reserved by someone else or already disabled.
+* It prevents a user from taking a vehicle already disabled.
+* It prevents the user from taking a vehicle that is not sufficiently loaded to make a trip.
+* It prevents a user to start a trip from a station out of service, but rather direct it to a nearby and accessible station.
+* It prevents a user to end a trip to a station out of service, but rather direct it to a nearby and accessible station.
+* It prevents a user to drop off a vehicle in an unauthorised area and/or even to cross an unauthorised area with that vehicle.
+
 Requirements
 ------------
 
