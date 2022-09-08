@@ -19,8 +19,8 @@ You will find here a list of new cases that are handled by our version of OpenTr
 * It prevents a user from taking a vehicle already reserved by someone else or already disabled.
 * It prevents a user from taking a vehicle already disabled.
 * It prevents the user from taking a vehicle that is not sufficiently loaded to make a trip.
-* It prevents a user to start a trip from a station out of service, but rather direct it to a nearby and accessible station.
-* It prevents a user to end a trip to a station out of service, but rather direct it to a nearby and accessible station.
+* It prevents a user to start a trip from a station out of service, but rather direct him to a nearby and accessible station.
+* It prevents a user to end a trip to a station out of service, but rather direct him to a nearby and accessible station.
 * It prevents a user to drop off a vehicle in an unauthorised area and/or even to cross an unauthorised area with that vehicle.
 
 Requirements
