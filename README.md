@@ -3,7 +3,7 @@
 **Author: Maazouz Mehdi** <br>
 **Email: maazouz.mehdi95@gmail.com** <br>
 
-This work represents my contribution to multi-modal routing as part of my [Master Thesis](https://docs.mobilitydb.com/pub/MobilityDB-OpenTripPlanner.pdf) at Université libre de Bruxelles under the supervision of Professor Esteban Zimányi. This repository is a clone of the original located [here](https://github.com/MaazouzMehdi/ConnectOTP). There is also $a [detailed workshop](https://github.com/MobilityDB/MobilityDB-OpenTripPlanner/blob/main/workshop/pdf/connect-workshop.pdf).
+This work represents my contribution to multi-modal routing as part of my [Master Thesis](https://docs.mobilitydb.com/pub/MobilityDB-OpenTripPlanner.pdf) at Université libre de Bruxelles under the supervision of Professor Esteban Zimányi. This repository is a clone of the original located [here](https://github.com/MaazouzMehdi/ConnectOTP). There is also a [detailed workshop](https://github.com/MobilityDB/MobilityDB-OpenTripPlanner/blob/main/workshop/pdf/connect-workshop.pdf).
 
 This project aims to show you how to connect OpenTripPlanner and MobilityDB and to display the generated trips on Qgis. The generated trips are multi-modal and focus on means of transport obtained via GTFS and GBFS data.
 
